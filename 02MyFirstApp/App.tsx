@@ -1,8 +1,9 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 // import {HelloWordScreen} from './src/presentation/screens/HelloWordScreen';
-import {CounterScreen} from './src/presentation/screens/CounterScreen';
+// import {CounterScreen} from './src/presentation/screens/CounterScreen';
 import {PaperProvider} from 'react-native-paper';
+import { CounterM3Screen } from './src/presentation/screens/CounterM3Screen';
 
 export const App = () => {
   return (
@@ -10,7 +11,7 @@ export const App = () => {
       <PaperProvider>
         <SafeAreaView style={styles.container}>
           {/* <HelloWordScreen name="Paul Rinoso" /> */}
-          <CounterScreen />
+          <CounterM3Screen />
         </SafeAreaView>
       </PaperProvider>
     </>

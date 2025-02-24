@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {Button} from 'react-native-paper';
+import { GlobalStyles } from '../../theme/GlobalStyles';
 // import {PrimaryButton} from '../../components';
 
 //* https://reactnative.dev/docs/components-and-apis  --> aqui esta la documentacion de reactnative
@@ -17,7 +18,7 @@ export const CounterScreen = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={GlobalStyles.centerContainer}>
       <Text style={styles.title}>{Counter}</Text>
 
       {/* <Button onPress={() => addCounter()} title="+1" /> */}

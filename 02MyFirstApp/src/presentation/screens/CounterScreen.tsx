@@ -1,7 +1,6 @@
 import {useState} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-// import {PrimaryButton} from '../../components';
-import {Button} from 'react-native-paper';
+import {PrimaryButton} from '../../components';
 
 //* https://reactnative.dev/docs/components-and-apis  --> aqui esta la documentacion de reactnative
 
@@ -21,14 +20,14 @@ export const CounterScreen = () => {
       <Text style={styles.title}>{Counter}</Text>
 
       {/* <Button onPress={() => addCounter()} title="+1" /> */}
-      {/* <PrimaryButton
+      <PrimaryButton
         label="Incrementar!!"
         onPress={() => addCounter()}
         onLongPres={() => resteCounter()}
-      /> */}
-      <Button onPress={() => addCounter()} onLongPress={() => resteCounter()}>
+      />
+      {/* <Button onPress={() => addCounter()} onLongPress={() => resteCounter()}>
         Incrementar
-      </Button>
+      </Button> */}
     </View>
   );
 };
@@ -46,4 +45,3 @@ const styles = StyleSheet.create({
     fontWeight: '300',
   },
 });
-

@@ -1,3 +1,11 @@
+## 1 dispositivo fisico
+R5CX40EM18Y     device
+## *especifico dispositivo
+"android": "react-native run-android --deviceId=emulator-5554",
+
+## react native Papers:
+https://callstack.github.io/react-native-paper/docs/guides/getting-started/
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started

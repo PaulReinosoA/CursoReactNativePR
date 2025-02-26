@@ -21,12 +21,11 @@ export const CounterM3Screen = () => {
   return (
     <View style={GlobalStyles.centerContainer}>
       <Text style={GlobalStyles.title}>{Counter}</Text>
-      <Text>hola</Text>
       <FAB
-        label="+1"
         style={GlobalStyles.fab}
-        onPress={() => addCounter(2)}
+        onPress={() => addCounter(1)}
         onLongPress={() => resteCounter()}
+        icon="plus"
       />
     </View>
   );

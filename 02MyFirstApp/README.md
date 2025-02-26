@@ -1,3 +1,5 @@
+## En la generalidad presentation tiene dentro {components, themes, screens}
+
 ## 1 dispositivo fisico
 R5CX40EM18Y     device
 ## *especifico dispositivo

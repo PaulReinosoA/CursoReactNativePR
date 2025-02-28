@@ -7,7 +7,9 @@ import {PaperProvider} from 'react-native-paper';
 import FontAwesome6 from '@react-native-vector-icons/fontawesome6';
 // import {BoxObjectModelScreen} from './src/presentation/screens/BoxObjectModelScreen';
 // import {DimensionScreen} from './src/presentation/screens/DimensionScreen';
-import {PositionScreen} from './src/presentation/screens/PositionScreen';
+// import {PositionScreen} from './src/presentation/screens/PositionScreen';
+// import {FlexScreen} from './src/presentation/screens/FlexScreen';
+import {FlexDirectionScreen} from './src/presentation/screens/FlexDirectionScreen';
 
 const iconRender = (props: any) => (
   <FontAwesome6 {...props} iconStyle="solid" />
@@ -25,7 +27,9 @@ export const App = () => {
           {/* <CounterM3Screen /> */}
           {/* <BoxObjectModelScreen /> */}
           {/* <DimensionScreen /> */}
-          <PositionScreen />
+          {/* <PositionScreen /> */}
+          {/* <FlexScreen /> */}
+          <FlexDirectionScreen />
         </SafeAreaView>
       </PaperProvider>
     </>

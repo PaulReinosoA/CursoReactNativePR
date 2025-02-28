@@ -7,7 +7,9 @@ R5CX40EM18Y     device
 
 ## react native Papers:
 https://callstack.github.io/react-native-paper/docs/guides/getting-started/
+## documentacion de flexbox:
 
+ https://reactnative.dev/docs/flexbox 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started

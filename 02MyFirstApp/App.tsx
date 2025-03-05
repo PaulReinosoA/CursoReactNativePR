@@ -9,7 +9,8 @@ import FontAwesome6 from '@react-native-vector-icons/fontawesome6';
 // import {DimensionScreen} from './src/presentation/screens/DimensionScreen';
 // import {PositionScreen} from './src/presentation/screens/PositionScreen';
 // import {FlexScreen} from './src/presentation/screens/FlexScreen';
-import {FlexDirectionScreen} from './src/presentation/screens/FlexDirectionScreen';
+// import {FlexDirectionScreen} from './src/presentation/screens/FlexDirectionScreen';
+import {HomeWorkScreen3} from './src/presentation/screens/HomeWorkScreen3';
 
 const iconRender = (props: any) => (
   <FontAwesome6 {...props} iconStyle="solid" />
@@ -29,7 +30,8 @@ export const App = () => {
           {/* <DimensionScreen /> */}
           {/* <PositionScreen /> */}
           {/* <FlexScreen /> */}
-          <FlexDirectionScreen />
+          {/* <FlexDirectionScreen /> */}
+          <HomeWorkScreen3 />
         </SafeAreaView>
       </PaperProvider>
     </>

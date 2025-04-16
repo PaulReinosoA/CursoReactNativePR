@@ -2,8 +2,16 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {HomeScreem} from '../screens/home/HomeScreem';
 import {ProductsScreen} from '../screens/products/ProductsScreen';
 import {SettingsScreen} from '../screens/settings/SettingsScreen';
+import {ProductScreen} from '../screens/products/ProductScreen';
 
-const Stack = createStackNavigator();
+export type RootStackParams = {
+  Home: undefined;
+  Product: {id: number; name: string};
+  Products: undefined;
+  Settings: undefined;
+};
+
+const Stack = createStackNavigator<RootStackParams>();
 
 export const StackNavigator = () => {
   return (
@@ -14,6 +22,7 @@ export const StackNavigator = () => {
       }}>
       <Stack.Screen name="Home" component={HomeScreem} />
       <Stack.Screen name="Products" component={ProductsScreen} />
+      <Stack.Screen name="Product" component={ProductScreen} />
       <Stack.Screen name="Settings" component={SettingsScreen} />
     </Stack.Navigator>
   );

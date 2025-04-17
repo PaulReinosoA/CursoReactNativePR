@@ -2,8 +2,6 @@ import {Text, View} from 'react-native';
 import {HamburgerMenu} from '../../components/shared/HamburgerMenu';
 import Icon from '@react-native-vector-icons/fontawesome6';
 
-
-
 export const Tab1Screen = () => {
   // const navigation = useNavigation();
 
@@ -22,7 +20,7 @@ export const Tab1Screen = () => {
     <View>
       <HamburgerMenu />
       <Text>Tab1Screen</Text>
-      <Icon name="rocket" size={30} color="#900" />
+      <Icon name="rocket" size={30} color="blue" iconStyle="solid" />
     </View>
   );
 };

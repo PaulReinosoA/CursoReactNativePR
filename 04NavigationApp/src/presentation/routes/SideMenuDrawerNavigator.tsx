@@ -8,7 +8,8 @@ import {
 import {ProfileScreen} from '../screens/profile/ProfileScreen';
 import {globalColors} from '../theme/theme';
 import {Text, useWindowDimensions, View} from 'react-native';
-import { ButtonTabsNavigator } from './ButtonTabsNavigator';
+import {ButtonTabsNavigator} from './ButtonTabsNavigator';
+import {EvilIconVectorIcon} from '../components/shared/EvilIconVectorIcon';
 
 const Drawer = createDrawerNavigator();
 
@@ -31,8 +32,24 @@ export const SideMenuDrawerNavigator = () => {
         },
       }}>
       {/* <Drawer.Screen name="StackNavigator" component={StackNavigator} /> */}
-      <Drawer.Screen name="StackNavigator" component={ButtonTabsNavigator} />
-      <Drawer.Screen name="Profile" component={ProfileScreen} />
+      <Drawer.Screen
+        options={{
+          drawerIcon: ({color}) => (
+            <EvilIconVectorIcon name={'bonfire-outline'} color={color} />
+          ),
+        }}
+        name="Tabs"
+        component={ButtonTabsNavigator}
+      />
+      <Drawer.Screen
+        options={{
+          drawerIcon: ({color}) => (
+            <EvilIconVectorIcon name={'person-circle-outline'} color={color} />
+          ),
+        }}
+        name="Profile"
+        component={ProfileScreen}
+      />
     </Drawer.Navigator>
   );
 };

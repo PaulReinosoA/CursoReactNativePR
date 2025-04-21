@@ -3,9 +3,10 @@ import {Tab1Screen} from '../screens/tabs/Tab1Screen';
 // import {Tab2Screen} from '../screens/tabs/Tab2Screen';
 // import {Tab3Screen} from '../screens/tabs/Tab3Screen';
 import {globalColors} from '../theme/theme';
-import {Text} from 'react-native';
+// import {Text} from 'react-native';
 import {TopTabsNavigator} from './TopTabsNavigator';
 import {StackNavigator} from './StackNavigator';
+import {EvilIconVectorIcon} from '../components/shared/EvilIconVectorIcon';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,24 +29,42 @@ export const ButtonTabsNavigator = () => {
       <Tab.Screen
         name="Tab1"
         options={{
-          title: 'tab1',
-          tabBarIcon: ({color}) => <Text style={{color}}>tab1</Text>,
+          title: '',
+          tabBarIcon: ({color}) => (
+            <EvilIconVectorIcon
+              name={'accessibility-outline'}
+              color={color}
+              size={28}
+            />
+          ), //<Text style={{color}}>tab1</Text>,
         }}
         component={Tab1Screen}
       />
       <Tab.Screen
         name="Tab2"
         options={{
-          title: 'tab2 ',
-          tabBarIcon: ({color}) => <Text style={{color}}>tab2</Text>,
+          title: '',
+          tabBarIcon: ({color}) => (
+            <EvilIconVectorIcon
+              name={'aperture-outline'}
+              color={color}
+              size={28}
+            />
+          ), //<Text style={{color}}>tab2</Text>,
         }}
         component={TopTabsNavigator}
       />
       <Tab.Screen
         name="Tab3"
         options={{
-          title: 'tab3',
-          tabBarIcon: ({color}) => <Text style={{color}}>tab3</Text>,
+          title: '',
+          tabBarIcon: ({color}) => (
+            <EvilIconVectorIcon
+              name={'airplane-outline'}
+              color={color}
+              size={28}
+            />
+          ), //<Text style={{color}}>tab3</Text>,
         }}
         component={StackNavigator}
       />

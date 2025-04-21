@@ -1,6 +1,7 @@
 import {Text, View} from 'react-native';
 import {HamburgerMenu} from '../../components/shared/HamburgerMenu';
-import Icon from '@react-native-vector-icons/fontawesome6';
+// import Icon from '@react-native-vector-icons/fontawesome6';
+import {EvilIconVectorIcon} from '../../components/shared/EvilIconVectorIcon';
 
 export const Tab1Screen = () => {
   // const navigation = useNavigation();
@@ -20,7 +21,7 @@ export const Tab1Screen = () => {
     <View>
       <HamburgerMenu />
       <Text>Tab1Screen</Text>
-      <Icon name="rocket" size={30} color="blue" iconStyle="solid" />
+      <EvilIconVectorIcon name={'calendar'} color={'green'} size={65} />
     </View>
   );
 };

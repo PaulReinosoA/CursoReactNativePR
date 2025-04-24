@@ -14,3 +14,4 @@ export const ButtonTabNavigator = () => {
     </Tab.Navigator>
   );
 };
+

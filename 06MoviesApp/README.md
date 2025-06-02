@@ -1,3 +1,17 @@
+## Generacion del api key de movieDB:
+API-->: ed3f6cc58429579b06630a21e68075ae
+
+
+# MOVIES:
+
+## DEV
+1. CLONAR PROJ.
+2. INSTALAR DEPENDENCIAS NPMI 
+3. CLONAR ENV.TEMPLATE EN .ENV
+4. EJECUTAR PROYECTO
+
+
+URL--> (https://www.udemy.com/course/react-native-fh/learn/lecture/41832742#questions/21518842 )
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
